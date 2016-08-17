@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Utils - TestLauncher">
+	<parameter name="webPageURL" value="https://www.skiutah.com/"/>
+	<parameter name="titleStringToTest" value="Ski Utah - Ski Utah"/>
+    <test name="TestLauncher">
+        <classes>
+            <class name="com.stgconsulting.Utils">
+				<methods>
+					<include name="verifyPageTitle" />
+					<include name="webCrawler" />
+					<include name="cleanup" />
+				</methods>
+			</class>
+        </classes>
+    </test>
+</suite>
